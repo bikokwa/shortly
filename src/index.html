@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script src="../src/js/script.js" defer></script>
     <title>Shortly</title>
   </head>
   <body>
@@ -105,6 +106,7 @@
         >
           <input
             type="text"
+            id="link-input"
             class="flex-1 p-3 border-2 rounded-lg placeholder-yellow-500 focus:outline-none"
             placeholder="Shorten a link here"
           />
@@ -114,6 +116,12 @@
           >
             ShortenIt!
           </button>
+
+          <!-- Error Message -->
+          <div
+            id="err-msg"
+            class="absolute left-7 bottom-3 text-red text-sm italic"
+          ></div>
         </form>
 
         <!-- Link 1 -->
